@@ -12,4 +12,10 @@ A small project which is combination of
 
 # To run
 
-docker-compose up --build
+## First time
+
+    docker-compose up --build
+
+## Later
+
+    docker-compose up
