@@ -1,3 +1,4 @@
+// https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose
 import express, { Express } from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -12,7 +13,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(todoRoutes);
 
-const uri: string = `mongodb://localhost:27017`;
+const uri: string = `mongodb://mongodb:27017/test`;
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 mongoose.set("useFindAndModify", false);
 

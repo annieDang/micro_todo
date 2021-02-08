@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  client:
+    container_name: todo-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - ./client:/app
+      - node_modules:/client/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+
+  server:
+    container_name: todo-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server:/app
+      - node_modules:/server/node_modules
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongodb
+    restart: always
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:4.1.8-xenial
+    container_name: mongodb
+    networks:
+      - app-network
+    volumes:
+      - dbdata:/data/db
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata:
+  node_modules:

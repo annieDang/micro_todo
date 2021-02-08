@@ -1,0 +1,11 @@
+# comment
+*/temp*
+*/*/temp*
+temp?
+*/node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+README.md
+.gitignore
