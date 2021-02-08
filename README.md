@@ -1,7 +1,15 @@
 # micro_todo
 
+A small project which is combination of
+
+- Nodejs
+  - Typescript
+  - Express
+  - Mongoose
+- Docker
+  - Docker compose
+- Mongodb
+
 # To run
 
-yarn install
-
-yarn start
+docker-compose up --build
