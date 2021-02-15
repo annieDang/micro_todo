@@ -1,6 +1,6 @@
 # micro_todo
 
-A small project which is combination of
+A small project created to learn Typescript which is combination of
 
 - Nodejs
   - Typescript
