@@ -8,7 +8,7 @@ A small project on going created to learn Typescript which is combination of
   - Mongoose (later)
 - Docker
   - Docker compose
-- Mongodb
+- Mongodb (later)
 
 # To run
 
@@ -19,4 +19,4 @@ A small project on going created to learn Typescript which is combination of
 ## After first run
 
     docker-compose up
-    
+  
