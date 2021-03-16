@@ -38,6 +38,14 @@ services:
     volumes:
       - dbdata:/data/db
 
+  cache:
+    image: redis
+    container_name: cache
+    networks:
+      - app-network
+    volumes:
+      - cache:/
+
 networks:
   app-network:
     driver: bridge
@@ -45,3 +53,4 @@ networks:
 volumes:
   dbdata:
   node_modules:
+  cache:

@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../../.."
+	},
+	{
+		"path": "../../../../../Bravoco"
+	},
+	{
+		"path": "../../../../../easygo"
+	}
+],
+  "settings": {
+    "codemap.textMode": true
+  }
+}

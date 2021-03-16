@@ -5,7 +5,7 @@ A small project which is combination of
 - Nodejs
   - Typescript
   - Express
-  - Mongoose
+  - Mongoose (later)
 - Docker
   - Docker compose
 - Mongodb
@@ -16,6 +16,7 @@ A small project which is combination of
 
     docker-compose up --build
 
-## Later
+## After first run
 
     docker-compose up
+    
